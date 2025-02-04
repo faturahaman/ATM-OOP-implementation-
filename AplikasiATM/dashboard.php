@@ -47,6 +47,12 @@ $balance = $user->getBalance($_SESSION['user_id']);
                     </svg>
                     <span class="text-lg">Logout</span>
                 </a>
+                <a href="transfer.php" class="flex items-center justify-center p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12" />
+    </svg>
+    <span class="text-lg">Transfer Uang</span>
+</a>    
             </div>
         </div>
     </div>
