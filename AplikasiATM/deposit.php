@@ -10,7 +10,12 @@ if (!isset($_SESSION['user_id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $transaction = new Transaction();
     $transaction->deposit($_SESSION['user_id'], $_POST['amount']);
-    echo "<div class='bg-green-500 text-white p-4 rounded-md mb-4'>Saldo berhasil ditambahkan.</div>";
+    
+    // echo "<div class='bg-green-500 text-white p-4 rounded-md mb-4'>Saldo berhasil ditambahkan.</div>";
+    echo "<script>
+    alert('berhasil transfer');
+    window.location.href='dashboard.php';
+    </script>";
 }
 ?>
 
